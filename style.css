@@ -1,0 +1,258 @@
+* {
+    margin: 0px;
+}
+
+body {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5625em;
+    text-align: center;
+    padding: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/* header section */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px;
+    align-items: center;
+    position: fixed;
+    background-color: #fff;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px;
+}
+
+ul li a {
+    color: #000;
+    text-decoration: underline;
+    font-size: 1.25em;
+}
+
+ul li a:hover {
+    color: #386641!important;
+} 
+
+.logo {
+    max-width: 30%;
+    float: left;
+}
+
+/* home section */
+#home {
+    background-color: #f2e8cf;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: left;
+    text-align: center;
+    background-image: url(../img/home_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home h1 {
+    display: inline-block;
+    color: #f2e8cf;
+    font-family: Arial;
+    text-align: center;
+    font-size: 2.8125em;
+    padding: 20px;
+    padding-top: 96px;
+    padding-left: 200px;
+    margin-top: 160px;
+}
+
+#home h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.875em;
+    padding: 5px;
+    margin-left: 35%;
+    margin-right: 10%;
+}
+
+/* about section */
+#about {
+    background-color: #fff;
+    max-height: 80vh;
+    padding: 80px;
+    padding-bottom: 10%;
+}
+
+#about h2 {
+    text-align: center;
+}
+
+aside {
+    text-align: left;
+    font-size: 1.25em;
+    max-width: 40%;
+    max-height: 1vh;
+    margin-right: 0%;
+    margin-left: 50%;
+    top: -10px;
+}
+
+.img3 {
+    display: inline-block;
+    max-width: 18%;
+    margin-left: 28%;
+    margin-top: -1%;
+}
+
+/* services section */
+#services {
+    display: inline-block;
+    background-color: #f2e8cf;
+    padding: 105px;
+    max-height: 80vh;
+    background-image: url(../img/services_bg.png);
+    background-size: cover;
+}
+
+#services h1 {
+    color: #f2e8cf;
+    text-align: left;
+    padding: 5px;
+    margin-top: -5%;
+}
+
+#services p {
+    color: #000;
+    padding: 10px;
+}
+
+#services ul {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    color: #000;
+    list-style: circle;
+    background-color: #ffff;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #386641;
+    padding: 5%;
+}
+
+/* contact section */
+#contact {
+    padding: 40px;
+}
+
+#contact img {
+    max-inline-size: 5%;
+    padding-bottom: 1%;
+    padding-left: 49%;
+    padding-top: 2%
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+#contact p {
+    text-align: center;
+    padding: 0.5%;
+}
+
+#contact ul {
+    text-align: center;
+}
+
+/* footer section */
+footer {
+    width: 100%;
+    background-color: #fff;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    color: #000;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1198px) {
+
+    * {
+        margin: 0px;
+    }
+
+    #home h1 {
+        float: left;
+        margin-left: -50%;
+    }
+    
+    #home h2 {
+        padding: 5px;
+        margin-left: -20%;
+    
+    }
+
+    @media screen and (max-width: 1224px) {
+        #contact {
+            height: 75vh;
+            padding-bottom: 10%;
+        }
+    }
+
+    @media screen and (max-width: 1096px) {
+        #about {
+            padding-bottom: 20%;
+        }
+       
+        .img3 {
+            max-width: 30%;
+            margin-left: 15%;
+        }
+    }
+
+    @media screen and (max-width: 891px) {
+        
+        header {
+            display: inline-block;
+            padding: 0px 5px 0px 5px;
+        }
+        
+        ul li {
+            margin: 5px;
+            padding-right: 5%;
+            float: right;
+        }
+
+        .logo {
+            float: left;
+            max-width: 15%;
+        }
+    }
+
+    @media screen and (max-height: 600px) {
+       
+    }
+
+}
