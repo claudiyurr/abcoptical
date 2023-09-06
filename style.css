@@ -61,7 +61,7 @@ ul li a:hover {
     grid-template-rows: 1fr 1fr;
     justify-content: left;
     text-align: center;
-    background-image: url(../img/home_bg.png);
+    background-image: url(home_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
