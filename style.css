@@ -255,8 +255,7 @@ footer p {
         }
     }
 
-    @media only screen and (device-width : 375px) 
-    and (device-height : 812px) 
+   @media only screen and (device-width : 375px) 
     and (-webkit-device-pixel-ratio : 2) {
 
         body {
@@ -264,18 +263,18 @@ footer p {
         }
 
         .logo {
-            max-width: 30%;
+            max-width: 20%;
         }
         #home {
             width: 100%;
-            height: 70vh;
-            background-image: url(../img/green_bg.png);
+            height: 50vh;
+            background-image: url(green_bg.png);
         }
 
         .magnify2 {
             display: block;
             max-width: 70%;
-            padding-top: 40%;
+            padding-top: 25%;
             padding-left: 35%;
 
         }
@@ -301,20 +300,17 @@ footer p {
         }
         
         #home h2 {
-            padding: 5px;
-            margin-left: 35%;
-            margin-right: 10%;
-            display: none;
-        }
-
-        .logo {
-            display: none;
+            min-height: 10em;
+            display: table-cell;
+            vertical-align: middle;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #about {
             background-color: #fff;
             max-height: 90vh;
-            padding: 40px;
+            padding: 15%;
             padding-bottom: 10%;
         }
 
@@ -345,16 +341,22 @@ footer p {
 
         #services {
             padding: 6%;
-            max-height: 60%;
-            background-image: url(../img/services_bg.png);
+            max-height: 70vh;
+            background-image: url(services_bg.png);
             background-size: contain;
         }
 
         #services ul {
-            display: inline-block;
+            display: block;
+            list-style-position: inside;
             padding: 5%;
             display: table;
             margin: 0 auto;
+            table-layout: auto;
+         }
+
+         #services ul li {
+            float: left;
          }
          
          #contact {
@@ -365,6 +367,18 @@ footer p {
     #contact p {
         text-align: center;
         padding: 1%;
+    }
+
+    #contact ul {
+        display: block;
+            list-style-position: inside;
+            padding: 5%;
+            display: table;
+            margin: 0 auto;
+            table-layout: auto;
+    }
+    #contact ul li {
+        float: left;
     }
 
     }
